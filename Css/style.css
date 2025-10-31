@@ -553,6 +553,18 @@ main .hero .bck img {
     justify-content: center;
     align-items: center;
 }
+.content .card .box1 .class1 h1 {
+    font-size: 1.0rem;
+}
+.content .card .box2 .class2 h1 {
+    font-size: 1.0rem;
+}
+.content .card .box3 .class3 h1 {
+    font-size: 1.0rem;
+}
+.content .card .box4 .class4 h1 {
+    font-size: 1.0rem;
+}
 .content .card .box1 {
     width: 80%;
     height: 350px;
