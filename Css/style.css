@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+}
+header {
+    z-index: 10;
+    width: 100%; 
+    height: 80px;
+    position: fixed;
+    font-size: 1.2rem;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header .all {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: orange;
+}
+.logo {
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+}
+.logo span {
+    color: black;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.logo .first {
+    color: orange;
+    font-family: cursive;
+}
+.logo .second {
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+header nav ul li a {
+    color: black;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+header nav ul li a::after {
+    left: 0;
+    width: 0;
+    height: 2px;
+    content: "";
+    bottom: -5px;
+    transition: 0.3s;
+    position: absolute;
+}
+header nav ul li a:hover {
+    transform: scale(1.1) translate(-2px);
+}
+header nav ul li a:hover::after {
+    width: 100%;
+}
+nav ul li a.active::after {
+    width: 100%;
+    background-color: orange;
+}
+header nav ul li a button {
+    cursor: pointer;
+    color: orange;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid orange;
+}
+.connect-btn:hover {
+    color: white;
+    transform: scale(1.05);
+    border: 2px solid white;
+    background-color: orange;
+}
+header nav ul li a button p {
+    font-size: 1.1rem;
+}
+main .hero {
+    width: 100%;
+    height: 600px;
+    position: relative; 
+    background-color:black;
+}
+main .hero .bck img {
+    width: 100%;
+    opacity: 0.5;
+    height: 600px;
+    object-fit: cover;
+}
+.hero .text {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    color: white;
+    font-size: 2.8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hero .text h1 {
+    margin-bottom: 30px;
+}
+.hero .text button {
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 10px 25px;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    background-color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.connect-btn2:hover {
+    transform: scale(1.1) translate(-2px);
+}
+.hero .profile img {
+    top: 19%;
+    right: 63%;
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 50%;
+}
+.content {
+    width: 100%;
+    height: 800px;
+    margin-bottom: 125px;
+}
+.content .card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    transition: all 0.8s ease-in-out;
+}
+
+.content .card .box1 {
+    width: 22%;
+    border-radius: 30px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.6);
+    height: 500px;
+    margin-right: 10px;
+}
+.content .card .box2 {
+    width: 22%;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+    height: 500px;
+    margin-right: 10px;
+}
+.content .card .box3 {
+    width: 22%;
+    border-radius: 30px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.6);
+    height: 500px;
+    margin-right: 10px;
+}
+.content .card .box4 {
+    width: 22%;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.6);
+    margin-right: 10px;
+}
+.content .card .box1:hover {
+    transform: scale(1.05);
+}
+.content .card .box2:hover {
+    transform: scale(1.05);
+}
+.content .card .box3:hover {
+    transform: scale(1.05);
+}
+.content .card .box4:hover {
+    transform: scale(1.05);
+}
+.content .card .box1 .img {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    background-color: black;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.content .card .box2 .img {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    background-color: black;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.content .card .box3 .img {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    background-color: black;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.content .card .box4 .img {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    background-color: black;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.content .card .box1 div img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    opacity: 0.5;
+    object-fit: cover;
+}
+.content .card .box2 div img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    opacity: 0.5;
+    object-fit: cover;
+}
+.content .card .box3 div img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.content .card .box4 div img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.content .card button  {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    border-radius: 15px;
+    position: absolute;
+    border: none;
+    bottom: 15px;
+    left: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content .card button a {
+    color: black;
+}
+.content .card button:hover {
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.content .card button a:hover {
+    color: white;
+}
+.content .card .box1 .class1 h1 {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.content .card .box2 .class2 h1 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.content .card .box3 .class3 h1 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.content .card .box4 .class4 h1 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.content .card .box1 .class1 p {
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.0rem;
+}
+.content .card .box2 .class2 p {
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content .card .box3 .class3 p {
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content .card .box4 .class4 p {
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content .under {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    position: relative;
+}
+.content .under div img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    opacity: 0.4;
+}
+.first {
+    color: orange;
+    font-family: cursive;
+}
+.second {
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+.cta h2 {
+    position: absolute;
+    top: 80px;
+    font-size: 3.5rem;
+    left: 280px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cta .p1 {
+    position: absolute;
+    top: 180px;
+    left: 150px;
+    color: white;
+    font-size: 2.0rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cta .p2 {
+    position: absolute;
+    top: 250px;
+    color: white;
+    left: 70px;
+    font-size: 1.8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer {
+    width: 100%;
+    height: 550px;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: linear-gradient(135deg, #3f0c03, #4b2302);
+    padding-top: 50px;
+}
+.footer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer h4 {
+    color: black;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    padding-bottom: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+.footer ul li {
+    margin-bottom: 20px;
+}
+.footer ul li a {
+    color: white;
+    transition: all 0.3s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+.footer ul li a:hover {
+    color: white;
+    transform: translateX(5px);
+    text-align: underline;
+    text-underline-offset: 4px;
+}
+.footer-bottom {
+    color: white;
+    margin-top: 30px;
+    padding-top: 15px;
+    font-size: 0.9rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: 2px solid #ff6a00;
+    outline: none;
+    background-color: white;
+    color: #ff6a00;
+    cursor: pointer;
+    padding: 12px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+#scrollTopBtn:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+@media (max-width: 400px) {
+    .container {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+    header {
+    z-index: 10;
+    width: 100%; 
+    height: 80px;
+    position: fixed;
+    font-size: 1rem;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .box {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: orange;
+    }
+.logo {
+    width: 20%;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    margin-right: 30px;
+}
+.logo span {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.logo .first {
+    color: orange;
+    font-family: cursive;
+    font-weight: 50;
+}
+.logo .second {
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header nav ul{
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 15px;
+}
+header .all {
+    text-align: center;
+}
+header nav ul li {
+    width: 5%;
+    margin: none;
+}
+header nav ul li a {
+    font-size: 0.7rem;
+}
+.connect-btn{
+    padding: 2px 5px;
+}
+header nav ul li a button {
+    padding: 3px 6px;
+}
+header nav ul li a button p {
+    font-size: 0.5rem;
+}
+main .hero {
+    height: 300px;
+}
+main .hero .bck img {
+    height: 300px;
+}
+.hero .text {
+    font-size: 0.8rem;
+     top: 35%;
+     left: 50%;
+}
+.hero .text h1 {
+    margin-bottom: 10px;
+}
+.hero .text button {
+    font-size: 0.8rem;
+}
+.hero .profile img {
+    width: 150px;
+    height: 150px;
+    top: 35%;
+    right: 58%;
+}
+.content {
+    height: 1500px;
+}
+.content .card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content .card .box1 {
+    width: 80%;
+    height: 350px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.content .card .box2 {
+    width: 80%;
+    height: 350px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+}

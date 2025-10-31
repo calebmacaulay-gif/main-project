@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/features.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="all">
+                <div class="logo">
+                    <div class="box"></div><a href="index.html"><span class="first">CONNE</span><span
+                            class="second">CTIFY</span></a>
+                </div>
+                <nav>
+                    <ul>
+                        
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./pricing.html">Pricing</a></li>
+                        <li><a href="./features.html" class="active">Features</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./sign-in.html"><button class="connect-btn">Login</button></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="features-hero">
+            <h1>Explore Our Amazing Features</h1>
+            <p>Our Platform provides everything you need to grow your digital business effortlessly.</p>
+        </section>
+        <section class="features-grid">
+            <div class="feature-item">
+                <i class="fa-solid fa-lock"></i>
+                <h3>Secure Data</h3>
+                <p>Your data is protected with advanced encryption and security</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>Fast Performance</h3>
+                <p>Load and process tasks quickly with optimized performance</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <h3>Moblie Responsiveness</h3>
+                <p>Access and manage your account from any device</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <h3>Cloud Storage</h3>
+                <p>Save and retrieve your files anywhere and anytime</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-people-group"></i>
+                <h3>Team Collaboration</h3>
+                <p>Work with your team smoothly and efficiently</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Smart Analytics</h3>
+                <p>Track real-time statistics and build better decisions.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <h3>Automation Tools</h3>
+                <p>Automate workflow to save more time and energy.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-bell"></i>
+                <h3>Instant Alerts</h3>
+                <p>Never miss an update-get notified instantly</p>
+            </div>
+        </section>
+        <div class="all1">
+        <section class="choose">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-check"></i>Trusted by professionals worldwide
+                </li>
+                <li>
+                    <i class="fa-solid fa-check"></i>Simple, clean, and easy to use
+                </li>
+                <li>
+                    <i class="fa-solid fa-check"></i>24/7 customer support
+                </li>
+            </ul>
+        </section>
+        <section class="cta">
+            <h3>Ready to get started?</h3>
+            <button class="btn"><a href="./sign-in.html">Get Started</a></button>
+        </section>
+        </div>
+    </div>
+    <button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <script>
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 150) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        });
+
+        scrollTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top:0,
+                behavior:"smooth"
+            });
+        });
+    </script>
+</body>
+
+</html>

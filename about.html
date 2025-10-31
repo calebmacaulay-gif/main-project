@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/aboutstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="all">
+                <div class="logo">
+                    <div class="box"></div><a href="index.html"><span class="first">CONNE</span><span
+                            class="second">CTIFY</span></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html" class="active">About</a></li>
+                        <li><a href="./pricing.html">Pricing</a></li>
+                        <li><a href="./features.html">Features</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./sign-in.html"><button class="connect-btn">Login</button></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="about-hero">
+                <h1>Connecting Opportunities, Empowering People</h1>
+                <p>Connectify helps individuals and businesses build stronger networks through seamless digital
+                    collaboration.</p>
+            </section>
+            <section class="mission-vision">
+                <div class="box">
+                    <h2>Our Mission</h2>
+                    <p>To connect users globally with tools that enhance communication, productivity and growth.</p>
+                </div>
+                <div class="box">
+                    <h2>Our Vision</h2>
+                    <p>To be the leading platform that bridges digital gaps and fosters meaningful connections worldwide
+                    </p>
+                </div>
+    </div>
+    </section>
+    <section class="why">
+        <h2>Why Connectify?</h2>
+        <div class="features">
+            <div class="card">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>Smart Collections</h3>
+                <p>We match people and resources intelligently</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-shield-heart"></i>
+                <h3>Secure & Reliable</h3>
+                <p>Your data is protected with top-grade security</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Global Reach</h3>
+                <p>Connect and collaborate from anywhere</p>
+            </div>
+        </div>
+    </section>
+    <section class="cta-banner">
+        <h2>Join Connectify</h2>
+        <p>Start creating real opportunities by connecting smarter.</p>
+        <a href="./sign-in.html" class="cta-btn">Get Started</a>
+    </section>
+    </main>
+    <footer>
+        <h1>Core Values</h1>
+        <div class="value1">
+            <div>
+                <p>Innovation <i class="fa-solid fa-lightbulb"></i></p>
+            </div>
+            <div>
+                <p>Connection <i class="fa-solid fa-handshake"></i></p>
+            </div>
+            <div>
+                <p>Simplicity <i class="fa-solid fa-gear"></i></p>
+            </div>
+            <div>
+                <p>Reliability <i class="fa-solid fa-lock"></i></p>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <script>
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 150) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        });
+
+        scrollTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top:0,
+                behavior:"smooth"
+            });
+        });
+    </script>
+</body>
+
+</html>

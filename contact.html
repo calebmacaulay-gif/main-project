@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="all">
+                <div class="logo">
+                    <div class="box"></div><a href="index.html"><span class="first">CONNE</span><span
+                            class="second">CTIFY</span></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./pricing.html">Pricing</a></li>
+                        <li><a href="./features.html">Features</a></li>
+                        <li><a href="./contact.html" class="active">Contact</a></li>
+                        <li><a href="./sign-in.html"><button class="connect-btn">Login</button></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>We'd love to hear from you! Whether you have a question, feedback, or business inquiry, we're
+                        here to help.</p>
+                    <div><i class="fa-solid fa-envelope"></i>
+                        Email: info@connectify.com</div>
+                    <div><i class="fa-solid fa-phone"></i>
+                        Phone: +234 815 116 4912</div>
+                    <div> <i class="fa-solid fa-location-dot"></i>
+                        Address: 23 Eleganza Street, PortHarcourt, Nigeria
+                    </div>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="#">
+                    <input type="text" placeholder="Your Full Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <script>
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 150) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        });
+
+        scrollTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top:0,
+                behavior:"smooth"
+            });
+        });
+    </script>
+</body>
+
+</html>
