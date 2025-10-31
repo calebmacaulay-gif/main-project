@@ -561,4 +561,10 @@ main .hero .bck img {
     text-align: center;
     margin-bottom: 20px;
 }
+.content .card .box3 {
+    width: 80%;
+    height: 350px;
+    text-align: center;
+    margin-bottom: 20px;
+}
 }
