@@ -5,12 +5,14 @@
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .container {
     width: 100%;
     height: 100vh;
 }
+
 header {
-    width: 100%; 
+    width: 100%;
     height: 80px;
     font-size: 1.2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -19,46 +21,55 @@ header {
     z-index: 10;
     background-color: white;
 }
+
 header .all {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .box {
     height: 20px;
     width: 20px;
     border-radius: 50%;
     background-color: orange;
 }
+
 .logo {
     display: flex;
     margin-left: 30px;
     align-items: center;
 }
+
 .logo span {
     color: black;
     font-weight: bold;
     font-size: 1.6rem;
 }
+
 .logo .first {
     color: orange;
     font-family: cursive;
 }
+
 .logo .second {
     font-weight: 200;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 header nav ul li {
     display: inline;
     margin-right: 40px;
 }
+
 header nav ul li a {
     display: inline-block;
     color: black;
     transition: all 0.3s ease;
     position: relative;
 }
+
 header nav ul li a::after {
     content: "";
     position: absolute;
@@ -68,16 +79,20 @@ header nav ul li a::after {
     bottom: -5px;
     transition: 0.3s;
 }
+
 header nav ul li a:hover::after {
     width: 100%;
 }
+
 nav ul li a.active::after {
     width: 100%;
     background-color: orange;
 }
+
 header nav ul li a:hover {
     transform: scale(1.1) translate(-2px);
 }
+
 header nav ul li a button {
     padding: 10px 20px;
     border: 2px solid orange;
@@ -86,25 +101,30 @@ header nav ul li a button {
     color: orange;
     cursor: pointer;
 }
+
 .connect-btn:hover {
     background-color: orange;
     color: white;
     border: 2px solid white;
     transform: scale(1.05);
 }
+
 header nav ul li a button p {
     font-size: 1.1rem;
 }
+
 .about-hero {
     text-align: center;
     padding: 80px 20px;
     background-color: #fff7f0;
     z-index: 10;
 }
+
 .about-hero h1 {
     font-size: 2.5rem;
     color: #ff7a00;
 }
+
 .mission-vision {
     display: flex;
     justify-content: center;
@@ -113,6 +133,7 @@ header nav ul li a button p {
     flex-wrap: wrap;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .mission-vision .box {
     background-color: #ffffff;
     padding: 30px;
@@ -123,25 +144,30 @@ header nav ul li a button p {
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.27);
 }
+
 .mission-vision .box h2 {
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
 }
+
 .why {
     text-align: center;
     padding: 70px 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .why h2 {
     margin-bottom: 30px;
 }
+
 .features {
     display: flex;
     gap: 25px;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .card {
     background-color: #ffffff;
     padding: 25px;
@@ -150,14 +176,17 @@ header nav ul li a button p {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.27);
     transition: all 0.3s ease-in-out;
 }
+
 .card:hover {
     transform: scale(1.07);
 }
+
 .card i {
     font-size: 32px;
     color: #ff7a00;
     margin-bottom: 15px;
 }
+
 .cta-banner {
     text-align: center;
     padding: 60px 20px;
@@ -168,9 +197,11 @@ header nav ul li a button p {
     width: 90%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .cta-banner h2 {
     margin-bottom: 20px;
 }
+
 .cta-btn {
     display: inline-block;
     margin-top: 20px;
@@ -181,16 +212,19 @@ header nav ul li a button p {
     font-weight: bold;
     transition: 0.3s;
 }
+
 .cta-btn:hover {
     background: linear-gradient(135deg, #811a08, #be5d0e);
     border: 2px solid white;
     color: white;
 }
- footer {
+
+footer {
     height: 283px;
     background: linear-gradient(135deg, #811a08, #be5d0e);
     padding: 30px;
 }
+
 footer h1 {
     display: flex;
     justify-content: center;
@@ -198,13 +232,15 @@ footer h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2.0rem;
 }
+
 footer .value1 {
     width: 100%;
     display: flex;
     margin-top: 50px;
     justify-content: center;
-    
+
 }
+
 footer .value1 div {
     width: 20%;
     height: 50px;
@@ -214,20 +250,23 @@ footer .value1 div {
     margin-right: 20px;
     border-radius: 15px;
 }
+
 footer .value1 div {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    transition:  all 0.3s ease-in-out ;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
+
 footer .value1 div:hover {
     transform: scale(1.1) translate(-2px);
     color: rgb(158, 128, 128);
-    
+
 }
+
 #scrollTopBtn {
     display: none;
     position: fixed;
@@ -245,7 +284,153 @@ footer .value1 div:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
+
 #scrollTopBtn:hover {
     background-color: white;
     transform: scale(1.1);
+}
+
+@media (max-width:400px) {
+    .container {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    header {
+        height: 80px;
+        font-size: 1rem;
+    }
+
+    .box {
+        width: 5px;
+        height: 5px;
+    }
+
+    .logo {
+        width: 20%;
+        display: flex;
+        margin-left: 10px;
+        align-items: center;
+    }
+
+    .logo span {
+        font-size: 0.9rem;
+    }
+
+    .logo .first {
+        font-weight: 50;
+    }
+
+    .logo .second {
+        font-weight: 100;
+    }
+
+    header nav ul {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-left: 60px;
+    }
+
+    header .all {
+        text-align: center;
+    }
+
+    header nav ul li {
+        width: 5%;
+        margin: none;
+    }
+
+    header nav ul li a {
+        font-size: 0.7rem;
+    }
+
+    #contact {
+        display: none;
+    }
+
+    .about-hero {
+        padding: 50px 10px;
+    }
+
+    .about-hero h1 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .about-hero p {
+        font-size: 0.8rem;
+    }
+
+    .connect-btn {
+        display: none;
+        padding: 2px 5px;
+    }
+
+    .mission-vision {
+        padding: 30px 10px;
+    }
+
+    .mission-vision .box {
+        height: 150px;
+    }
+
+    .mission-vision .box h2 {
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+
+    .mission-vision .box p {
+        font-size: 0.9rem;
+    }
+
+    .why h2 {
+        font-size: 1.2rem;
+    }
+
+    .why h2 {
+        font-size: 1.2rem;
+    }
+
+    .features h3 {
+        font-size: 1.0rem;
+        margin-bottom: 10px;
+    }
+
+    .features p {
+        font-size: 0.8rem;
+    }
+    .cta-banner {
+        padding: 30px 10px;
+        margin: 30px auto;
+    }
+    .cta-banner h2 {
+        margin-bottom: 5px;
+    }
+    .cta-btn {
+        margin-top: 10px;
+        padding: 6px 15px;
+        font-size: 0.8rem;
+    }
+    footer {
+        height: 300px;
+        padding: 0;
+    }
+    footer h1 {
+        font-size: 1rem;
+        padding: 15px;
+    }
+    footer .value1 {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .value1 div {
+        width: 80%;
+        height: 30px;
+        font-size: 0.9rem;
+        margin: 0 0 5px 0;
+    }
 }

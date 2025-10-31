@@ -212,3 +212,104 @@ header nav ul li a button p {
     background-color: white;
     transform: scale(1.1);
 }
+
+@media (max-width:400px) {
+    .container {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    header {
+        height: 80px;
+        font-size: 1rem;
+    }
+
+    .box {
+        width: 5px;
+        height: 5px;
+    }
+
+    .logo {
+        width: 20%;
+        display: flex;
+        margin-left: 10px;
+        align-items: center;
+    }
+
+    .logo span {
+        font-size: 0.9rem;
+    }
+
+    .logo .first {
+        font-weight: 50;
+    }
+
+    .logo .second {
+        font-weight: 100;
+    }
+
+    header nav ul {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-left: 60px;
+    }
+
+    header .all {
+        text-align: center;
+    }
+
+    header nav ul li {
+        width: 5%;
+        margin: none;
+    }
+
+    header nav ul li a {
+        font-size: 0.7rem;
+    }
+
+    #contact {
+        display: none;
+    }
+    .connect-btn {
+        display: none;
+    }
+    .pricing-hero {
+        padding: 30px 10px;
+    }
+    .pricing-hero h1 {
+        font-size: 1.1rem;
+    }
+    .pricing-hero p {
+        font-size: 0.8rem;
+    }
+    .pricing-section {
+        padding: 35px 10%;
+    }
+    .pricing-card {
+        padding: 20px 15px;
+        font-size: 0.9rem;
+    }
+    .pricing-card h3 {
+        font-size: 1.3rem;
+    }
+    .pricing-card p {
+        font-size: 1rem;
+    }
+    .pricing-card li {
+        font-size: 0.9rem;
+    }
+    .btn {
+        padding: 8px 15px;
+    }
+    .cta {
+        padding: 40px 10px;
+    }
+    .cta h2 {
+        margin-bottom: 20px;
+    }
+    .cta-btn {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+}
